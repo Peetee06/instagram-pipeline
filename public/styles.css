@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f2d3d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+input[type="file"],
+select {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    background-color: #3e4c6d;
+    color: #fff;
+    border: 2px solid #81a1c1;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #81a1c1;
+    color: #1f2d3d;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #81a1c1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #9cb4cc;
+}
+
+textarea {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    background-color: #3e4c6d;
+    color: #fff;
+    border: 2px solid #81a1c1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#loader {
+    margin-top: 1.5rem;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #81a1c1;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#downloadLink {
+    display: block;
+    margin-top: 1.5rem;
+    color: #81a1c1;
+    font-weight: 500;
+    text-decoration: none;
+}

@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Peter Trost",
+    "email": "p.trost93@gmail.com"
+  },
   "license": "ISC",
   "dependencies": {
     "ag-psd": "^15.1.0",
