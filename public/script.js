@@ -33,8 +33,12 @@ document
         });
 
         const url = window.URL.createObjectURL(blob);
+        const downloadLink = document.createElement("a");
         downloadLink.href = url;
-        downloadLink.classList.remove("hidden");
+        downloadLink.download = "translated.psd";
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
       } else {
         const error = await response.text();
         alert(`Error: ${error}`);
